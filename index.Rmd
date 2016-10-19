@@ -31,3 +31,4 @@ R Markdown has many available output formats including [HTML](http://rmarkdown.r
 <div class="col-sm-6">
 
 ![](images/RMarkdownOutputFormats.png)
+</div>
