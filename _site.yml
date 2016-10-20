@@ -1,8 +1,8 @@
 output_dir: "."
 name: "my-website"
 navbar:
-  title: "My Website"
-  type: inverse
+  title: "Jerad Hoy"
+  #type: inverse
   left:
     - text: "Home"
       href: index.html
@@ -10,10 +10,11 @@ navbar:
       href: 1-example.html
     - text: "Terrain Colors"
       href: 3-inline.html
+    - text: "Shiny Dashboard"
+      href: 4-shiny-dash.html
 output:
   html_document:
-    theme: cosmo
+    theme: yeti
     highlight: textmate
     include:
-      after_body: footer.html
     css: styles.css
