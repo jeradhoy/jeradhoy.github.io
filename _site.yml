@@ -6,6 +6,8 @@ navbar:
   left:
     - text: "Home"
       href: index.html
+    - text: "Articles"
+      href: index.html
     - text: "Viridis Colors"
       href: 1-example.html
     - text: "Terrain Colors"
@@ -14,7 +16,9 @@ navbar:
       href: 4-shiny-dash.html
 output:
   html_document:
-    theme: yeti
+    theme: cosmo
     highlight: textmate
-    include:
+    mathjax: null
+    includes:
+      after_body: footer.html
     css: styles.css
