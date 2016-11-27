@@ -1,0 +1,36 @@
+---
+title: "About R Markdown"
+output: 
+  html_document:
+    toc: false
+    toc_float: false
+---
+
+<style type="text/css">
+.title {
+  display: none;
+}
+
+#getting-started img {
+  margin-right: 10px;
+}
+
+</style>
+
+<div class="row" style="padding-top: 30px;">
+<div class="col-sm-6">
+
+# **About Me**
+## Summary
+I am a student and undergraduate researcher, striving to use data and machine learning to make the world a better place. I'm intereseted in sustainable energy, space, environment and how a furture of AI and machine learning will help us to tackle these issues. 
+
+</div>
+<div class="col-sm-6">
+
+![](images/nasaPic.jpg)
+</div>
+
+## Research
+## Resume
+## Personal
+In my free time, I enjoy backpacking, skiing, paragliding and anything else in the great outdoors.
