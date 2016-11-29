@@ -5,6 +5,8 @@ output:
     toc: true
     toc_float: true
     toc_depth: 2
+    includes:
+      before_body: [include_header_navpage.html]
 ---
 ### Intersting analysis done, involving techniques and approaches from data science, statistics, machine learning, and artificial intelligence. To learn more about me, check out the [About](./about.html) page.
 

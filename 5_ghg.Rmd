@@ -1,0 +1,8 @@
+---
+title: "GHG"
+output: html_document
+---
+
+Article on GHG App
+
+http://api.eia.gov/category/?api_key=29dd4ed41cd993a64f85793e035350c1&category_id=371
