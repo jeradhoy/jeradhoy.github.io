@@ -27,3 +27,5 @@ output:
     toc: true
     toc_float: true
     toc_depth: 2
+    includes:
+      after_body: include_footer.html

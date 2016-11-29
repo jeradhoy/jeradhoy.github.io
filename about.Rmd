@@ -4,6 +4,8 @@ output:
   html_document:
     toc: false
     toc_float: false
+    includes:
+      before_body: [include_header_navpage.html]
 ---
 
 <style type="text/css">
