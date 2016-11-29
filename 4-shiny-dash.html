@@ -11,7 +11,7 @@
 
 
 
-<title>Shiny Dashboard</title>
+<title>MSU Sustainability Dashboard</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -176,7 +176,7 @@ $(document).ready(function ()  {
 
     // establish options
     var options = {
-      selectors: "h1,h2,h3",
+      selectors: "h1,h2",
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
@@ -275,10 +275,7 @@ div.tocify {
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li>
-  <a href="index.html">Home</a>
-</li>
-<li class="dropdown">
+        <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     Articles
      
@@ -287,6 +284,9 @@ div.tocify {
   <ul class="dropdown-menu" role="menu">
     <li>
       <a href="4-shiny-dash.html">Sustainability Dashboard</a>
+    </li>
+    <li>
+      <a href="1-example.html">Viridis Example</a>
     </li>
   </ul>
 </li>
@@ -316,17 +316,29 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Shiny Dashboard</h1>
+<h1 class="title toc-ignore">MSU Sustainability Dashboard</h1>
 
 </div>
 
 
+<div id="introduction" class="section level1">
+<h1>Introduction</h1>
+<p>Starting as a simple project between me and Emma Bode our in Statistical Computing and Graphical Analysis class, this projects was grew into a collaboration between MSU students, the Office of Sustainability, and Sustainability Now club.</p>
+<p>This project open-source project is (hosted on GitHub)[<a href="https://github.com/jeradhoy/MsuSustainabilityDashboard" class="uri">https://github.com/jeradhoy/MsuSustainabilityDashboard</a>], and we greatly appreciate any comments/suggestions/feedback/help that anyone has to offer.</p>
+</div>
+<div id="data" class="section level1">
+<h1>Data</h1>
+</div>
+<div id="building-it" class="section level1">
+<h1>Building It</h1>
 <div>
-<iframe src="http://poulterlab.rci.montana.edu:8080/users/j24x165/snowDash/" style="position:fixed; top:50px; left: 0px; bottom:0px; right:0px; width:100%; height:100%; border:2px; margin:0px; padding:100px; overflow:hidden; z-index:999999;">
+<iframe src="http://poulterlab.rci.montana.edu:8080/users/j24x165/snowDash/" style="width:100%; height:100%; border:2px; margin:0px; padding:100px; overflow:hidden; z-index:999999;">
  
 </iframe>
 </div>
+</div>
 
+<em>© Copyright 2016 Jerad Hoy. All Rights Reserved</em>
 
 
 </div>

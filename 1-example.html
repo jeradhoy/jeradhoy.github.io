@@ -157,7 +157,7 @@ $(document).ready(function () {
 <!-- tabsets -->
 <script>
 $(document).ready(function () {
-  window.buildTabsets("TOC");
+  window.buildTabsets("section-TOC");
 });
 </script>
 
@@ -176,7 +176,7 @@ $(document).ready(function ()  {
 
     // establish options
     var options = {
-      selectors: "h1,h2,h3",
+      selectors: "h1,h2",
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
@@ -189,17 +189,17 @@ $(document).ready(function ()  {
     options.smoothScroll = true;
 
     // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
+    var toc = $("#section-TOC").tocify(options).data("toc-tocify");
 });
 </script>
 
 <style type="text/css">
 
-#TOC {
+#section-TOC {
   margin: 25px 0px 20px 0px;
 }
 @media (max-width: 768px) {
-#TOC {
+#section-TOC {
   position: relative;
   width: 100%;
 }
@@ -254,7 +254,7 @@ div.tocify {
 <!-- setup 3col/9col grid for toc_float and main content  -->
 <div class="row-fluid">
 <div class="col-xs-12 col-sm-4 col-md-3">
-<div id="TOC" class="tocify">
+<div id="section-TOC" class="tocify">
 </div>
 </div>
 
@@ -275,10 +275,7 @@ div.tocify {
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li>
-  <a href="index.html">Home</a>
-</li>
-<li class="dropdown">
+        <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     Articles
      
@@ -287,6 +284,9 @@ div.tocify {
   <ul class="dropdown-menu" role="menu">
     <li>
       <a href="4-shiny-dash.html">Sustainability Dashboard</a>
+    </li>
+    <li>
+      <a href="1-example.html">Viridis Example</a>
     </li>
   </ul>
 </li>
@@ -312,7 +312,7 @@ div.tocify {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div class="fluid-row" id="section-header">
 
 
 
@@ -322,17 +322,27 @@ div.tocify {
 
 
 <p>The code below demonstrates two color palettes in the <a href="https://github.com/sjmgarnier/viridis">viridis</a> package. Each plot displays a contour map of the Maunga Whau volcano in Auckland, New Zealand.</p>
-<div id="viridis-colors" class="section level2">
-<h2>Viridis colors</h2>
+<div id="section-viridis-colors" class="section level1">
+<h1>Viridis colors</h1>
+<div id="section-level-2" class="section level2">
+<h2>Level 2</h2>
+<div id="section-level-3" class="section level3">
+<h3>Level 3</h3>
+<div id="section-level-4" class="section level4">
+<h4>Level 4</h4>
 <pre class="r"><code>image(volcano, col = viridis(200))</code></pre>
+<p><img src="1-example_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+</div>
+</div>
+</div>
+</div>
+<div id="section-magma-colors" class="section level1">
+<h1>Magma colors</h1>
+<pre class="r"><code>image(volcano, col = viridis(200, option = &quot;A&quot;))</code></pre>
 <p><img src="1-example_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 </div>
-<div id="magma-colors" class="section level2">
-<h2>Magma colors</h2>
-<pre class="r"><code>image(volcano, col = viridis(200, option = &quot;A&quot;))</code></pre>
-<p><img src="1-example_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
-</div>
 
+<em>© Copyright 2016 Jerad Hoy. All Rights Reserved</em>
 
 
 </div>

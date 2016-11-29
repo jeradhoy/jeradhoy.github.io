@@ -3,12 +3,13 @@ navbar:
   title: "Jerad Hoy"
   type: inverse
   left:
-    - text: "Home"
-      href: index.html
     - text: "Articles"
+      href: index.html
       menu:
         - text: "Sustainability Dashboard"
           href: 4-shiny-dash.html
+        - text: "Viridis Example"
+          href: 1-example.html
     - text: "About"
       href: about.html
   right:
@@ -25,6 +26,6 @@ output:
     css: styles.css
     toc: true
     toc_float: true
-    toc_level: 1
-    #includes:
-      #after_body: include_footer.html
+    toc_depth: 2
+    includes:
+      after_body: include_footer.html
