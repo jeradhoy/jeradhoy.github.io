@@ -11,7 +11,7 @@
 
 
 
-<title>Viridis Demo</title>
+<title>Resources</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,9 +19,6 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
-<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
-<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-1.1/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-1.1/highlight.js"></script>
@@ -157,108 +154,13 @@ $(document).ready(function () {
 <!-- tabsets -->
 <script>
 $(document).ready(function () {
-  window.buildTabsets("section-TOC");
+  window.buildTabsets("TOC");
 });
 </script>
 
 <!-- code folding -->
 
 
-
-
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#section-TOC").tocify(options).data("toc-tocify");
-});
-</script>
-
-<style type="text/css">
-
-#section-TOC {
-  margin: 25px 0px 20px 0px;
-}
-@media (max-width: 768px) {
-#section-TOC {
-  position: relative;
-  width: 100%;
-}
-}
-
-
-.toc-content {
-  padding-left: 30px;
-  padding-right: 40px;
-}
-
-div.main-container {
-  max-width: 1200px;
-}
-
-div.tocify {
-  width: 20%;
-  max-width: 260px;
-  max-height: 85%;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  div.tocify {
-    width: 25%;
-  }
-}
-
-@media (max-width: 767px) {
-  div.tocify {
-    width: 100%;
-    max-width: none;
-  }
-}
-
-.tocify ul, .tocify li {
-  line-height: 20px;
-}
-
-.tocify-subheader .tocify-item {
-  font-size: 0.90em;
-  padding-left: 25px;
-  text-indent: 0;
-}
-
-.tocify .list-group-item {
-  border-radius: 0px;
-}
-
-
-</style>
-
-<!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row-fluid">
-<div class="col-xs-12 col-sm-4 col-md-3">
-<div id="section-TOC" class="tocify">
-</div>
-</div>
-
-<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -315,34 +217,38 @@ div.tocify {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="section-header">
+<style type="text/css">
+/*.title {
+  display: none;
+}*/
+#disqus_thread {
+  display: none;
+}
+</style>
+
+<div class="fluid-row" id="header">
 
 
 
-<h1 class="title toc-ignore">Viridis Demo</h1>
+<h1 class="title toc-ignore">Resources</h1>
 
 </div>
 
 
-<p>The code below demonstrates two color palettes in the <a href="https://github.com/sjmgarnier/viridis">viridis</a> package. Each plot displays a contour map of the Maunga Whau volcano in Auckland, New Zealand.</p>
-<div id="section-viridis-colors" class="section level1">
-<h1>Viridis colors</h1>
-<div id="section-level-2" class="section level2">
-<h2>Level 2</h2>
-<div id="section-level-3" class="section level3">
-<h3>Level 3</h3>
-<div id="section-level-4" class="section level4">
-<h4>Level 4</h4>
-<pre class="r"><code>image(volcano, col = viridis(200))</code></pre>
-<p><img src="1-example_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<div id="books" class="section level1">
+<h1>Books</h1>
+<p><a href="http://r4ds.had.co.nz">R for Data Science</a></p>
+<p><a href="http://www-bcf.usc.edu/~gareth/ISL/">An Introduction to Statistical Learning</a></p>
+<p><a href="http://statweb.stanford.edu/~tibs/ElemStatLearn/">Elements of Statistical Learning</a></p>
 </div>
+<div id="cheat-sheets" class="section level1">
+<h1>Cheat Sheets</h1>
 </div>
+<div id="links" class="section level1">
+<h1>Links</h1>
 </div>
-</div>
-<div id="section-magma-colors" class="section level1">
-<h1>Magma colors</h1>
-<pre class="r"><code>image(volcano, col = viridis(200, option = &quot;A&quot;))</code></pre>
-<p><img src="1-example_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<div id="blogs" class="section level1">
+<h1>Blogs</h1>
 </div>
 
 <!-- disqus -->
@@ -369,8 +275,6 @@ div.tocify {
     <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
 
-</div>
-</div>
 
 </div>
 

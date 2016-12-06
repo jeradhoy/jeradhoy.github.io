@@ -1,0 +1,26 @@
+---
+title: "Resources"
+output: 
+  html_document:
+    toc: false
+    toc_float: false
+    includes:
+      before_body: [include_header_navpage.html]
+---
+
+# Books
+
+[R for Data Science](http://r4ds.had.co.nz)
+
+[An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/)
+
+[Elements of Statistical Learning](http://statweb.stanford.edu/~tibs/ElemStatLearn/)
+
+# Cheat Sheets
+
+
+# Links
+
+
+# Blogs
+

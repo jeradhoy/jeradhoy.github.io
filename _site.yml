@@ -12,6 +12,8 @@ navbar:
           href: 1-example.html
     - text: "About"
       href: about.html
+    - text: "Resources"
+      href: resources.html
   right:
     - icon: fa-github
       href: https://github.com/jeradhoy
