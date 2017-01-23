@@ -35,7 +35,7 @@ img { border: 0 }
 #full { padding: 0 0 15px 0; margin: 0 auto; }
 .responsive #full { width: 98%; }
 .maxwidth, #left.maxwidth { width: 960px; max-width: 960px; margin: 0 auto; }
-.responsive .maxwidth { width: 98%; max-width: 960px; min-width: 290px; }
+.responsive .maxwidth { width: 98%; max-width: 1200px; min-width: 290px; }
 .responsive header .maxwidth { width: 100%; }
 /* Campus tool bar nav */
 .campustools { float: left; left: 0; z-index: 2; padding: 17px 0 0 0; margin: 0; width: 700px; text-align: left }
